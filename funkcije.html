@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/funkcije.css">
+    <title>Funkcije u C-u</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Funkcije u C-u</h3>
+        <p>Funkcije pomažu da organizujemo kod u manje, ponovo upotrebljive blokove.</p>
+
+        <h4>Osnovni elementi funkcije:</h4>
+        <ul>
+            <li>Definisanje funkcije: ime, tip povratne vrednosti, argumenti</li>
+            <li>Prototipi funkcija: deklaracija pre glavnog programa</li>
+            <li>Scope promenljivih: lokalne i globalne promenljive</li>
+        </ul>
+
+        <h4>Primer funkcije:</h4>
+        <pre>
+#include &lt;stdio.h&gt;
+
+int saberi(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int rezultat = saberi(5, 7);
+    printf("Rezultat: %d\n", rezultat);
+    return 0;
+}
+        </pre>
+
+        <h4>Primeri često korišćenih funkcija:</h4>
+        <table>
+            <tr>
+                <th>Funkcija</th>
+                <th>Opis</th>
+            </tr>
+            <tr>
+                <td>printf()</td>
+                <td>Štampa tekst ili vrednosti na ekran</td>
+            </tr>
+            <tr>
+                <td>scanf()</td>
+                <td>Učitava vrednosti sa tastature</td>
+            </tr>
+            <tr>
+                <td>strlen()</td>
+                <td>Vraća dužinu stringa</td>
+            </tr>
+            <tr>
+                <td>sqrt()</td>
+                <td>Računa kvadratni koren broja (math.h)</td>
+            </tr>
+        </table>
+
+        <a href="index.html">&#8592; Nazad na početnu</a>
+    </div>
+</body>
+</html>

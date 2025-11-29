@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pokazivaci.css">
+    <title>Pokazivači u C-u</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Pokazivači u C-u</h3>
+        <p>Pokazivači (pointers) su promjenljive koje čuvaju adrese drugih promjenljivih. Omogućavaju direktan rad sa memorijom i dinamičko alociranje podataka.</p>
+
+        <div class="image-box">
+            <img src="images/pokazivaci.png" alt="Ilustracija pokazivača">
+            <p><em>Primjer: pokazivač koji pokazuje na promjenljivu</em></p>
+        </div>
+
+        <h4>Osnovni primjer pokazivača:</h4>
+        <div class="example-box">
+#include &lt;stdio.h&gt;<br>
+<br>
+int main() {<br>
+&nbsp;&nbsp;int broj = 10;<br>
+&nbsp;&nbsp;int *p = &amp;broj; // p pokazuje na broj<br>
+&nbsp;&nbsp;printf("Vrednost: %d\n", *p); // dereferenciranje<br>
+&nbsp;&nbsp;return 0;<br>
+}
+        </div>
+
+        <h4>Kratko objašnjenje:</h4>
+        <ul>
+            <li><strong>*p</strong> - dereferencira pokazivač i daje vrednost na koju pokazuje</li>
+            <li><strong>&amp;broj</strong> - vraća adresu promjenljive</li>
+            <li>Pointer aritmetika: možete povećavati ili smanjivati pokazivače da pokazuju na različite elemente niza</li>
+            <li>Dinamička memorija: malloc(), free(), realloc()</li>
+        </ul>
+
+        <a href="index.html">&#8592; Nazad na početnu</a>
+    </div>
+</body>
+</html>

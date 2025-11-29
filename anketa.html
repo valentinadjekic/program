@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/anketa.css">
+    <title>Anketa</title>
+</head>
+
+<body>
+
+    <h1>Opšta anketa — C Programiranje</h1>
+
+    <div class="box">
+        <h2>1. Lični podaci</h2>
+
+        <form>
+            <label>Ime i prezime:</label>
+            <input type="text" name="ime">
+
+            <label>Email:</label>
+            <input type="email" name="email">
+
+            <label>Godine:</label>
+            <input type="number" name="age" min="10" max="100">
+
+            <label>Datum popunjavanja:</label>
+            <input type="date" name="datum">
+
+            <label>Pol:</label><br>
+            <input type="radio" name="pol" value="musko"> Muško
+            <input type="radio" name="pol" value="zensko"> Žensko
+            <input type="radio" name="pol" value="drugo"> Drugo
+        </form>
+    </div>
+
+    <div class="box">
+        <h2>2. Vaš nivo znanja iz C jezika</h2>
+
+        <form>
+            <input type="radio" name="nivo" value="pocetnik"> Početnik<br>
+            <input type="radio" name="nivo" value="osnovno"> Znam osnove<br>
+            <input type="radio" name="nivo" value="napredno"> Napredno<br>
+            <input type="radio" name="nivo" value="expert"> Ekspert
+        </form>
+    </div>
+
+    <div class="box">
+        <h2>3. Mini provjera znanja</h2>
+
+        <form>
+            <p><b>Koji tip podataka se koristi za karakter?</b></p>
+            <input type="radio" name="q1" value="int"> int<br>
+            <input type="radio" name="q1" value="char"> char<br>
+            <input type="radio" name="q1" value="float"> float<br>
+
+            <p><b>Koje naredbe spadaju u petlje?</b></p>
+            <input type="checkbox" name="q2" value="for"> for<br>
+            <input type="checkbox" name="q2" value="while"> while<br>
+            <input type="checkbox" name="q2" value="switch"> switch<br>
+
+            <p><b>Koji operator služi za dodjelu vrijednosti?</b></p>
+            <select>
+                <option>=</option>
+                <option>==</option>
+                <option>!=</option>
+            </select>
+        </form>
+    </div>
+
+    <div class="box">
+        <h2>4. Izaberite tutorijal koji želite</h2>
+
+        <form>
+            <select>
+                <option value="osnove">Osnove C jezika</option>
+                <option value="petlje">Petlje i uslovi</option>
+                <option value="nizovi">Nizovi i stringovi</option>
+                <option value="pokazivaci">Pokazivači</option>
+                <option value="strukture">Strukture</option>
+                <option value="rad-sa-fajlovima">Rad sa fajlovima</option>
+            </select>
+        </form>
+    </div>
+
+    <div class="box">
+        <h2>5. Upload vašeg C zadatka</h2>
+
+        <form>
+            <input type="file" name="zadatak">
+        </form>
+    </div>
+
+    <div class="box">
+        <h2>6. Ocijenite naše tutorijale</h2>
+
+        <form>
+            <label>Ocjena (1-10):</label>
+            <input type="number" min="1" max="10">
+        </form>
+    </div>
+
+
+    <div class="box">
+        <h2>7. Vaš komentar</h2>
+
+        <form>
+            <textarea rows="5" placeholder="Ostavite svoje mišljenje..."></textarea>
+        </form>
+    </div>
+
+    <div class="box" style="text-align:center;">
+        <button>Pošalji anketu</button>
+    </div>
+
+</body>
+</html>
