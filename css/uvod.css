@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    font-family: "Merriweather Sans", sans-serif;
+    background-color: #9fa4acff;
+    color: #333;
+}
+
+      .slika {
+    width: 100%;
+    height: 300px; 
+    position: relative;
+    background-image: url("../images/pozadinaaa.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: top center; 
+}
+
+    .slika-content {
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    max-width: 1000px;
+    z-index: 3;
+  }
+  
+  .slika::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+    z-index: 2;
+  }
+
+  .slika-content h1 {
+    color: rgb(202, 201, 201);
+    font-size: 3rem; 
+    font-weight: 700; 
+    text-shadow: 2px 2px 5px rgb(194, 193, 193);
+    margin-bottom: 1rem; 
+  }
+
+  .slika .opis {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 18px;
+    color: #dddcdc;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+    z-index: 2;
+    max-width: 500px;
+}
+  .logo {
+    position: absolute;
+    bottom: 10px; 
+    right: 10px;  
+    z-index: 2;   
+}
+
+.logo img {
+    width: 40px; 
+    height: auto;
+}
+
+.kontakt {
+    position: absolute; 
+    top: 5px;          
+    right: 5px;        
+    display: flex;       
+    gap: 10px;           
+    z-index: 2;          
+}
+
+.kontakt i {
+    color: #b3cff3;         
+    font-size: 25px;    
+    cursor: pointer;     
+}
+
+.kontakt a i {
+    color: #adb2f0;         
+}
+.navbar {
+    background-color: #0e067c;
+    border-bottom: 5px solid #ec540e;
+}
+.navbar-brand {
+    color: #ffffff !important;      
+    font-weight: 600;               
+    font-size: 1rem;                
+    padding: 12px 20px;     
+    text-align: center;     
+}
+
+.navbar-brand:hover {
+    background-color: #e06310 !important;  
+    color: #fff !important;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.navbar .nav-link {
+    color: #ffffff !important;
+    font-weight: 600;
+    padding: 12px 20px;
+    text-align: center;
+}
+
+.navbar .nav-link:hover {
+    background-color: #e06310 !important;
+    color: #fff !important;
+    border-radius: 5px;
+}
+
+.navbar .nav-link.active {
+    background-color: #ec540e !important;
+    color: #fff !important;
+    border-radius: 5px;
+}
+
+.navbar-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.uvod {
+    width: 100%;      
+    margin: 0 ;          
+    padding: 20px;
+    color: #000000;          
+    background-color: #7a5454; 
+}
+.slika-tekst p::first-letter {
+    font-size: 60px;
+    font-family: serif;
+    font-style: italic;
+    font-weight: bolder;
+    color: rgb(71, 19, 37);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+.slika-lijevo {
+    display: flex;             
+    align-items: flex-start;   
+    gap: 20px;                
+    margin-top: 40px;          
+}
+.slika-lijevo-tekst {
+    flex: 1;                   
+    font-size: 18px;
+}
+.slika-lijevo img {
+    width: 200px;               
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.slika-desno {
+    display: flex;              
+    flex-direction: row-reverse; 
+    align-items: flex-start;     
+    gap: 20px;                   
+    margin-top: 40px;           
+}
+.slika-desno img {
+    width: 200px;               
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    float: left;
+    clip-path: ellipse(40% 50%);
+    shape-outside: ellipse(45% 50%);
+   
+}
+.slika-desno .slika-tekst {
+    flex: 1;                     
+    font-size: 18px;
+    
+    text-align: right;
+}
+.dodatni-tekst {
+    margin-top: 30px; 
+    font-size: 18px;
+    color: #000000;
+}
+figure {
+    display: flex;               
+    flex-direction: column;     
+    align-items: center;         
+    margin: 40px 0;              
+    text-align: center;          
+}
+
+figure img {
+    width: 250px;               
+    height: auto;                
+    border-radius: 10px;         
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
+}
+
+figure figcaption p {
+    font-size: 18px;            
+    color: #800101;              
+    margin-top: 10px;            
+    max-width: 500px;            
+    line-height: 1.5;            
+}
+.citat {
+    border-left: 4px solid #b42424; 
+    padding-left: 15px;
+    margin: 20px 0;
+    color: #b82a2a; 
+    font-style: italic; 
+    background-color: #c79494; 
+    border-radius: 5px;
+}
+
+.citat a {
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #990000; 
+}
